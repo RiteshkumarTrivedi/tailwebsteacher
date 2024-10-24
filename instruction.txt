@@ -1,0 +1,35 @@
+First, install XAMPP version v3.3.0, which includes:
+
+PHP 8.1.12
+MySQL
+
+Next, install Composer and Node.js with the following versions:
+
+Composer version 2.4.4
+Node.js version v18.13.0
+
+Navigate to C:\xampp\, open the xampp-control, and start both Apache and MySQL.
+
+In your browser, open localhost/phpMyAdmin. Create a database named tailwebs and import the tailwebs.sql file that I shared.
+
+Unzip the folder I provided into C:\xampp\htdocs\tailwebs.
+
+If you already have MySQL credentials (username and password), ensure they are correctly added to the .env file for the database connection in the Laravel project.
+
+Open the command prompt and run the following commands:
+
+composer install
+composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install
+npm run dev
+
+Open your browser and navigate to localhost/tailwebs/public/login.
+
+Username: rohit
+Password: Admin@123
+
+Username: jay
+Password: Admin@123
+
+If you wish to register, go to localhost/tailwebs/public/register.
